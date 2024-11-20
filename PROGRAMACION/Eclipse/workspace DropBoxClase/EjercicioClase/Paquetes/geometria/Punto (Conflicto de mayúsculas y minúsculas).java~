@@ -1,0 +1,8 @@
+package geometria;
+
+public Class Punto{ 
+	public int x;
+	public int y;
+
+}
+	

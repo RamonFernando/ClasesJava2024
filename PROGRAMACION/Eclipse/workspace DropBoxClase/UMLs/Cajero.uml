@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zXkD8CgAEeamWryS8LH_DA" name="Cajero">
+  <packagedElement xmi:type="uml:Class" xmi:id="_30HHwCgAEeamWryS8LH_DA" name="Consorcio">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XFQSoCgFEeamWryS8LH_DA" name="Attribute1" isUnique="false">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RpYqYCgGEeamWryS8LH_DA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rpxr8CgGEeamWryS8LH_DA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XtAPICgFEeamWryS8LH_DA" name="Attribute2"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BSctoCgFEeamWryS8LH_DA" name="Operation1" concurrency="concurrent"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_CWsY4CgFEeamWryS8LH_DA" name="Operation2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7RyvkCgAEeamWryS8LH_DA" name="Banco" visibility="public">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3gXdoCgGEeamWryS8LH_DA" name="Operation1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_B2FjACgBEeamWryS8LH_DA" name="Servidores"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DO-BgCgBEeamWryS8LH_DA" name="ATM"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_E4nf4CgBEeamWryS8LH_DA" name="C.Humanos"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HYBhkCgBEeamWryS8LH_DA" name="Cuenta"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Icw8ECgBEeamWryS8LH_DA" name="Tarjeta"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s-gBYCgGEeamWryS8LH_DA" memberEnd="_s-pLUCgGEeamWryS8LH_DA _s-pyYCgGEeamWryS8LH_DA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s-n9MCgGEeamWryS8LH_DA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s-n9MSgGEeamWryS8LH_DA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s-pyYCgGEeamWryS8LH_DA" name="consorcio" type="_30HHwCgAEeamWryS8LH_DA" association="_s-gBYCgGEeamWryS8LH_DA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s-pLUCgGEeamWryS8LH_DA" name="banco" type="_7RyvkCgAEeamWryS8LH_DA" association="_s-gBYCgGEeamWryS8LH_DA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_c40FUCgIEeamWryS8LH_DA" client="_30HHwCgAEeamWryS8LH_DA" supplier="_B2FjACgBEeamWryS8LH_DA"/>
+</uml:Model>
